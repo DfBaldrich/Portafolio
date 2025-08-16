@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+.contenedor {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #e2d5bc; */
+  color: #333;
+  background-image: url('img/img_fons_hormigon.png'); /* Reemplaza con la ruta correcta */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el contenedor */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:#fff;
+  margin-right: 5px;
+}
+
+.titulo{
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.head_linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6e0d7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+ .centrar_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.contenedor-centrar-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-centrar-imagen img {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+
+.hamburguesa {
+  display: block;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 100%; 
+  right: 0;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul.activo {
+  display: flex;  
+}
+  
+.contenedor-centrar-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ .centrar_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} 
+
+.centrar_img img {
+  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios en blanco debajo de la imagen */
+}
+
+.contenedor-centrar-imagen img {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
